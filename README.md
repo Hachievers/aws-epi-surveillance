@@ -83,6 +83,7 @@ def lambda_handler(event, context):
     )
 
     return {"statusCode": 200, "body": "stored"}
+```
 
 Give Lambda permission to write to S3.
 
