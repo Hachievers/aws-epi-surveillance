@@ -160,13 +160,10 @@ Run(bash):
 
 You will see:
 
-Epidemic curve
-
-Cases by location
-
-Vaccination distribution
-
-Age distribution
+-Epidemic curve
+-Cases by location
+-Vaccination distribution
+-Age distribution
 
 ---
 Below is the architecture diagram that illustrates how the pipeline works:
