@@ -87,6 +87,7 @@ def lambda_handler(event, context):
 Give Lambda permission to write to S3.
 
 
+
 3️⃣ Create API
 
 In API Gateway:
