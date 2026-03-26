@@ -2,6 +2,7 @@
 
 A fully serverless, cloud-native disease surveillance system built on AWS that simulates how real outbreak reports are collected, stored, queried, and analyzed for epidemiological insight.
 
+---
 <p align="center">
   <img src="mpox.png" alt="AWS Epidemiological Surveillance Pipeline Architecture" width="700">
 </p>
