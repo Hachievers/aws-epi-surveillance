@@ -157,8 +157,11 @@ Run(bash):
 You will see:
 
 Epidemic curve
+
 Cases by location
+
 Vaccination distribution
+
 Age distribution
 
 Insert visualization images here
