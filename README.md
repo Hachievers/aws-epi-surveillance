@@ -19,10 +19,14 @@ You will see how outbreak data flows from ingestion to epidemic curve visualizat
 ---
 
 ## Architecture
+Below is the architecture diagram that illustrates how the pipeline works:
 
-*Insert architecture diagram here*
+<p align="center">
+  <img src="architecture.png" alt="AWS Event-Driven Pipeline Architecture" width="700">
+</p>
 
 ---
+
 
 ## AWS Services Used
 
@@ -164,7 +168,14 @@ Vaccination distribution
 
 Age distribution
 
-Insert visualization images here
+---
+Below is the architecture diagram that illustrates how the pipeline works:
+
+<p align="center">
+  <img src="architecture.png" alt="AWS Event-Driven Pipeline Architecture" width="700">
+</p>
+
+---
 
 
 
