@@ -107,7 +107,7 @@ Copy your Invoke URL.
 
 Run(bash):
 
-python generate_epi_data.py
+```python generate_epi_data.py```
 
 This sends 300 case reports into your pipeline.
 
@@ -115,7 +115,7 @@ This sends 300 case reports into your pipeline.
 ---
 ### 5️⃣ Create Athena Table
 
-CREATE EXTERNAL TABLE epi_db.epi_reports (
+```CREATE EXTERNAL TABLE epi_db.epi_reports (
   patient_id string,
   age int,
   location string,
@@ -126,16 +126,18 @@ CREATE EXTERNAL TABLE epi_db.epi_reports (
 PARTITIONED BY (disease string, year string, month string, day string)
 ROW FORMAT SERDE 'org.openx.data.jsonserde.JsonSerDe'
 LOCATION 's3://your-bucket-name/raw/';
+```
 
 Then run:
 
-MSCK REPAIR TABLE epi_db.epi_reports;
+```MSCK REPAIR TABLE epi_db.epi_reports;
+```
 
 
 ---
 ### 6️⃣ Query Epidemic Curve
 
-SELECT
+```SELECT
   date(
     date_parse(substr("timestamp",1,19),'%Y-%m-%dT%H:%i:%s')
   ) AS report_date,
@@ -143,6 +145,7 @@ SELECT
 FROM epi_db.epi_reports
 GROUP BY 1
 ORDER BY 1;
+```
 
 Download results as epi_raw.csv
 
@@ -151,7 +154,7 @@ Download results as epi_raw.csv
 
 Run(bash):
 
-python visualize_epi.py
+```python visualize_epi.py```
 
 You will see:
 
