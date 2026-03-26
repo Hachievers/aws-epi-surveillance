@@ -88,7 +88,7 @@ Give Lambda permission to write to S3.
 
 
 
-3️⃣ Create API
+### 3️⃣ Create API
 
 In API Gateway:
 
@@ -101,7 +101,7 @@ Integration: Lambda
 Copy your Invoke URL.
 
 
-4️⃣ Generate Synthetic Data
+### 4️⃣ Generate Synthetic Data
 
 Run(bash):
 
@@ -110,7 +110,7 @@ python generate_epi_data.py
 This sends 300 case reports into your pipeline.
 
 
-5️⃣ Create Athena Table
+### 5️⃣ Create Athena Table
 
 CREATE EXTERNAL TABLE epi_db.epi_reports (
   patient_id string,
@@ -129,7 +129,7 @@ Then run:
 MSCK REPAIR TABLE epi_db.epi_reports;
 
 
-6️⃣ Query Epidemic Curve
+### 6️⃣ Query Epidemic Curve
 
 SELECT
   date(
@@ -143,7 +143,7 @@ ORDER BY 1;
 Download results as epi_raw.csv
 
 
-7️⃣ Visualize in Python
+### 7️⃣ Visualize in Python
 
 Run(bash):
 
