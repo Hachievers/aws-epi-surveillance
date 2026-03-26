@@ -101,6 +101,7 @@ Integration: Lambda
 Copy your Invoke URL.
 
 
+---
 ### 4️⃣ Generate Synthetic Data
 
 Run(bash):
@@ -110,6 +111,7 @@ python generate_epi_data.py
 This sends 300 case reports into your pipeline.
 
 
+---
 ### 5️⃣ Create Athena Table
 
 CREATE EXTERNAL TABLE epi_db.epi_reports (
@@ -129,6 +131,7 @@ Then run:
 MSCK REPAIR TABLE epi_db.epi_reports;
 
 
+---
 ### 6️⃣ Query Epidemic Curve
 
 SELECT
