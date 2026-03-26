@@ -129,9 +129,7 @@ LOCATION 's3://your-bucket-name/raw/';
 ```
 
 Then run:
-
-```MSCK REPAIR TABLE epi_db.epi_reports;
-```
+```MSCK REPAIR TABLE epi_db.epi_reports;```
 
 
 ---
