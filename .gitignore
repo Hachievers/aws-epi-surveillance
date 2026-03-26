@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# macOS
+.DS_Store
+
+# Virtual environments
+venv/
+.env/
+
+# Data files (don’t push large generated data)
+*.csv
+
+# IDE
+.vscode/
+.idea/
+
+# Images you may regenerate
+*.png
