@@ -22,7 +22,7 @@ You will see how outbreak data flows from ingestion to epidemic curve visualizat
 Below is the architecture diagram that illustrates how the pipeline works:
 
 <p align="center">
-  <img src="architecture.png" alt="AWS Event-Driven Pipeline Architecture" width="700">
+  <img src="epi-architecture-diagram1.png" alt="AWS Event-Driven Pipeline Architecture" width="700">
 </p>
 
 ---
