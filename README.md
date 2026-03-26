@@ -102,8 +102,7 @@ Type: HTTP API
 Route: POST /report
 
 Integration: Lambda
-
-Copy your Invoke URL.
+- Copy your Invoke URL.
 
 
 ---
@@ -129,7 +128,7 @@ This sends 300 case reports into your pipeline.
 )
 PARTITIONED BY (disease string, year string, month string, day string)
 ROW FORMAT SERDE 'org.openx.data.jsonserde.JsonSerDe'
-LOCATION 's3://your-bucket-name/raw/';
+LOCATION 's3://epi-surveillance-data-adekunle/raw/';
 ```
 
 Then run:
@@ -160,13 +159,13 @@ Run(bash):
 
 You will see:
 
--Epidemic curve
--Cases by location
--Vaccination distribution
--Age distribution
+- Epidemic curve
+- Cases by location
+- Vaccination distribution
+- Age distribution
 
 ---
-Below is the architecture diagram that illustrates how the pipeline works:
+Below are the visualization plots:
 
 <p align="center">
   <img src="epi-visualization-diagram.png" alt="AWS Epidemiological Surveillance Pipeline" width="700">
